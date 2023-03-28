@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@mixin base-font {
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+  }
+  
+
+  h1{
+    @include base-font();
+    font-size: 48px;
+  }
+
+  p{
+    @include base-font();
+    font-size: 16px;
+  }
+
+
+a{
+    @include base-font();
+    font-size: 12px;
+}
