@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from "./FirstForm.module.scss"
-import Link from "next/link";
+import styles from "./SecondForm.module.scss"
+
 
 
 
@@ -18,7 +18,7 @@ export default function FirstFormcomp() {
                 <div className={styles.col1}>
 
                     <div className={styles.one}>
-                        <input type="text" name="Company Name" placeholder='Company Name' />
+                        <input type="text" name="First Name" placeholder='First Name' />
                     </div>
 
                     <div className={styles.two}>
@@ -26,13 +26,13 @@ export default function FirstFormcomp() {
                         {/* <input type="text" name="" id="sec" placeholder='Website URL' />
                     <p>Assistive text</p> */}
                         <label>Label</label>
-                        <input type="text" name="" id="" value="Number of Employees" />
+                        <input type="text" name="" id="" value="Degree Name" />
                     </div>
 
 
                     <div className={styles.three}>
                         <label>Label</label>
-                        <input type="text" name="" id="" value="Account manager name" />
+                        <input type="text" name="" id="" value="Degree Start Date" />
                     </div>
 
                     <div className={styles.four}>
@@ -43,7 +43,7 @@ export default function FirstFormcomp() {
 
                     <div className={styles.five}>
                         <label>Label</label>
-                        <input className={styles.rtl1} type="text" name="" id="" value="Input text 3" />
+                        <input className={styles.rtl1} type="text" name="" id="" value="Input text 1" />
                     </div>
 
                     <div className={styles.six}>
@@ -65,7 +65,7 @@ export default function FirstFormcomp() {
                 <div className={styles.col2}>
 
                     <div className={styles.ones}>
-                        <input type="text" name="" id="sec" placeholder='Website URL' />
+                        <input type="text" name="" id="" placeholder='Second Name' />
                         <p>Assistive text</p>
 
                     </div>
@@ -75,7 +75,7 @@ export default function FirstFormcomp() {
                         {/* <input type="text" name="" id="sec" placeholder='Website URL' />
 <p>Assistive text</p> */}
                         <label>Label</label>
-                        <input type="text" name="" id="" value="Industry" />
+                        <input type="text" name="" id="" value="College Name" />
                         <p>Assistive text</p>
 
                     </div>
@@ -83,7 +83,7 @@ export default function FirstFormcomp() {
 
                     <div className={styles.threes}>
                         <label>Label</label>
-                        <input type="text" name="" id="" value="Account manager Function" />
+                        <input type="text" name="" id="" value="Degree End Date" />
                         <p>Assistive text</p>
                     </div>
 
@@ -109,7 +109,7 @@ export default function FirstFormcomp() {
                     <div className={styles.last}>
 
                     <div className={styles.sevens}>
-                        <input type="text" className={styles.subdomains} name="Company Name" placeholder='Input Text 7' />
+                        <input type="text" className={styles.subdomains} name="Resume" placeholder='Resume' />
                         <input type="text" className={styles.subdomaintwos} value='Edit' readonly="readonly" />
                        
                     </div>
@@ -124,11 +124,6 @@ export default function FirstFormcomp() {
 
 
             </div>
-            <Link href="/nextpage">
-
-            <button className={styles.button6}>Go to next page</button>
-
-            </Link>
 
             </div>
 
