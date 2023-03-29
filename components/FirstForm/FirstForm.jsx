@@ -15,7 +15,7 @@ export default function FirstFormcomp() {
                 <div className={styles.col1}>
 
                     <div className={styles.one}>
-                        <input type="text" id="first" name="Company Name" placeholder='Company Name' />
+                        <input type="text" name="Company Name" placeholder='Company Name' />
                     </div>
 
                     <div className={styles.two}>
@@ -23,13 +23,13 @@ export default function FirstFormcomp() {
                         {/* <input type="text" name="" id="sec" placeholder='Website URL' />
                     <p>Assistive text</p> */}
                         <label>Label</label>
-                        <input type="text" name="" id="sec" value="Number of Employees" />
+                        <input type="text" name="" id="" value="Number of Employees" />
                     </div>
 
 
                     <div className={styles.three}>
                         <label>Label</label>
-                        <input type="text" name="" id="sec" value="Account manager name" />
+                        <input type="text" name="" id="" value="Account manager name" />
                     </div>
 
                     <div className={styles.four}>
@@ -40,12 +40,17 @@ export default function FirstFormcomp() {
 
                     <div className={styles.five}>
                         <label>Label</label>
-                        <input className={styles.rtl1} type="text" name="" id="sec" value="Website URL" />
+                        <input className={styles.rtl1} type="text" name="" id="" value="Input text 3" />
                     </div>
 
                     <div className={styles.six}>
                         <label>Label</label>
-                        <input className={styles.rtl2}  type="text" name="" id="sec" value="Account manager name" />
+                        <input className={styles.rtl2} type="text" name="" id="" value="Input text 5" />
+                    </div>
+
+                    <div className={styles.seven}>
+                        <input type="text" className={styles.subdomain} name="Company Name" placeholder='Input Text 7' />
+                        <input type="text" className={styles.subdomaintwo} value='Edit' readonly="readonly"/>
                     </div>
 
 
