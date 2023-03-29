@@ -1,31 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import "/styles/colors.module.scss";
+@import "/styles/typography.module.scss";
 
-.main {
+
+
+.main{
     h1 {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 48px;
-        line-height: 56px;
+        @include h1();
         margin-top: 26px;
+
         margin-left: 65px;
     }
+
+    margin-bottom: 70px;
+    margin-left: 15%;
+    margin-right: 5%;
+
+
+.main1{
+
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+   
 }
 
 .col1 {
 
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    gap: 90px;
 
     .one {
         ::placeholder {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
+            @include h2();
+
         }
 
         input {
@@ -49,19 +59,14 @@
             top: -8px;
             left: 15px;
             background: $neutral-color;
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
+            @include h3();
             line-height: 16px;
+
         }
 
         input {
             padding: 16px 178px 16px 16px;
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
+            @include h2();
             line-height: 24px;
             border: 1px solid $secondary-color;
             border-radius: 4px;
@@ -82,20 +87,14 @@
             color: $primary-color;
             top: -8px;
             left: 15px;
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
+            @include h3();
             line-height: 16px;
             background: $neutral-color;
         }
 
         input {
             padding: 16px 178px 16px 16px;
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
+            @include h2();
             line-height: 24px;
             border: 2px solid $primary-color;
             border-radius: 4px;
@@ -120,10 +119,7 @@
         }
 
         ::placeholder {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
+            @include h2();
             line-height: 24px;
         }
 
@@ -146,10 +142,7 @@
             position: absolute;
             top: -8px;
             left: 15px;
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
+            @include h3();
             line-height: 16px;
             background: $neutral-color;
 
@@ -157,10 +150,7 @@
 
         input {
             padding: 16px 172px 16px 16px;
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
+            @include h2();
             line-height: 24px;
             border: 1px solid $secondary-color;
             border-radius: 4px;
@@ -187,10 +177,7 @@
             color: $primary-color;
             top: -8px;
             left: 15px;
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
+            @include h3();
             line-height: 16px;
             background: $neutral-color;
         }
@@ -199,10 +186,7 @@
 
             border-color: $primary-color;
             padding: 16px 172px 16px 16px;
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
+            @include h2();
             line-height: 24px;
             border: 2px solid $primary-color;
             color: $input-color;
@@ -256,10 +240,7 @@
 
 
         ::placeholder {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
+            @include h2();
             line-height: 24px;
         }
 
@@ -269,4 +250,310 @@
 
 
 
+}
+
+
+.col2{
+
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+    .ones {
+    
+
+
+        ::placeholder {
+            @include h2();
+
+        }
+        P{
+            
+            @include h3();
+            line-height: 25px;
+            margin-left: 14px;
+
+        }
+
+        input {
+            padding: 16px 196px 16px 16px;
+            border: 1px solid $secondary-color;
+            color: $input-color;
+            border-radius: 4px;
+        }
+
+        margin-top: 35px;
+        margin-left: 65px;
+    }
+
+
+
+    .twos {
+        position: relative;
+
+
+
+        label {
+            position: absolute;
+            top: -8px;
+            left: 15px;
+            background: $neutral-color;
+            @include h3();
+            line-height: 16px;
+            color: $focused-color;
+
+        }
+
+          P{
+            
+            @include h3();
+            line-height: 25px;
+            margin-left: 14px;
+
+        }
+
+
+
+        input {
+            padding: 16px 178px 16px 16px;
+            @include h2();
+            line-height: 24px;
+            border: 1px solid $secondary-color;
+            border-radius: 4px;
+
+
+        }
+
+        margin-left: 66px;
+
+    }
+
+
+    .threes {
+        position: relative;
+
+        label {
+            position: absolute;
+            color: $primary-color;
+            top: -8px;
+            left: 15px;
+            @include h3();
+            line-height: 16px;
+            background: $neutral-color;
+        }
+
+          P{
+            
+            @include h3();
+            line-height: 25px;
+            margin-left: 14px;
+            color: $focused-color;
+
+        }
+
+        input {
+            padding: 16px 178px 16px 16px;
+            @include h2();
+            line-height: 24px;
+            border: 2px solid $primary-color;
+            border-radius: 4px;
+
+        }
+
+        margin-left: 66px;
+
+    }
+
+
+    .fours {
+        .rtl {
+            background: url("/icons/eye.svg")no-repeat right;
+            background-position-x: 20rem;
+            background-size: 20px;
+            right: 10px;
+
+
+
+
+        }
+
+          P{
+            
+            @include h3();
+            line-height: 25px;
+            margin-left: 14px;
+
+        }
+
+        ::placeholder {
+            @include h2();
+            line-height: 24px;
+        }
+
+        input {
+            padding: 16px 192px 16px 16px;
+            border: 1px solid $secondary-color;
+            color: $input-color;
+            border-radius: 4px;
+
+        }
+
+        margin-left: 65px;
+        margin-top: 35px;
+    }
+
+    .fives {
+        position: relative;
+
+        label {
+            position: absolute;
+            top: -8px;
+            left: 15px;
+            @include h3();
+            line-height: 16px;
+            background: $neutral-color;
+            color: $focused-color;
+
+        }
+
+          P{
+            
+            @include h3();
+            line-height: 25px;
+            margin-left: 14px;
+
+        }
+
+        input {
+            padding: 16px 172px 16px 16px;
+            @include h2();
+            line-height: 24px;
+            border: 1px solid $secondary-color;
+            border-radius: 4px;
+
+        }
+
+        margin-left: 66px;
+
+        .rtl1 {
+            background: url("/icons/eye.svg")no-repeat right;
+
+            background-size: 20px;
+            background-position-x: 20rem;
+
+        }
+    }
+
+
+    .sixs {
+        position: relative;
+
+        label {
+            position: absolute;
+            color: $primary-color;
+            top: -8px;
+            left: 15px;
+            @include h3();
+            line-height: 16px;
+            background: $neutral-color;
+        }
+
+          P{
+            
+            @include h3();
+            line-height: 25px;
+            margin-left: 14px;
+
+        }
+
+        input {
+
+            border-color: $primary-color;
+            padding: 16px 172px 16px 16px;
+            @include h2();
+            line-height: 24px;
+            border: 2px solid $primary-color;
+            color: $input-color;
+            border-radius: 4px;
+
+        }
+
+        .rtl2 {
+            background: url("/icons/eye.svg")no-repeat right;
+            background-size: 20px;
+            background-position-x: 20rem;
+        }
+
+        margin-left: 66px;
+
+    }
+
+    .last{
+
+    display: flex;
+    flex-direction: column;
+
+
+    .sevens {
+        display: flex;
+        flex-direction: row;
+
+        .subdomaintwos {
+
+            color: $focused-color;
+
+            // text-align: right;
+            width: 27px;
+            height: 10px;
+            border: none;
+            border-left: 0px;
+            margin: 16px 0 0 -60px;
+            background: white;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+         
+
+        .subdomains {
+
+            border: 1px solid gray;
+            border-right: 0px;
+            outline: none;
+            padding: 16px 196px 16px 16px;
+            border: 1px solid $secondary-color;
+            color: $input-color;
+            border-radius: 4px;
+        }
+
+
+        ::placeholder {
+            @include h2();
+            line-height: 24px;
+        }
+
+        margin-left: 65px;
+
+    }
+
+    .sevens1{
+        P{
+            
+            @include h3();
+            line-height: 25px;
+            margin-left: 5rem;
+
+        }
+    }
+
+}
+
+
+
+
+
+}
 }
